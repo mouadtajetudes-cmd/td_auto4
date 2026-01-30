@@ -19,6 +19,9 @@ class Utilisateurs
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $email = null;
 
+    #[ORM\ManyToOne(targetEntity: Batiment::class)]
+    private ?Batiment $batiment = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -51,6 +54,17 @@ class Utilisateurs
     public function setEmail(?string $email): static
     {
         $this->email = $email;
+
+        return $this;
+    }
+    public function getBatiment(): ?Batiment
+    {
+        return $this->batiment;
+    }
+
+    public function setBatiment(?Batiment $batiment): static
+    {
+        $this->batiment = $batiment;
 
         return $this;
     }

@@ -20,10 +20,10 @@ Listes des points attendu:
 - [x] Créer au moins un controller avec sa vue twig
 - [x] Créer une commande qui ajoute des données en BDD
 - [ ] script bash qui execute tout les test
-- [ ] La commande d'ajout de données utilise FakerPHP
+- [x] La commande d'ajout de données utilise FakerPHP
 
 Listes des points bonus
-- [ ] Ajouter des test unitaire
+- [x] Ajouter des test unitaire
 - [ ] un dossier Githook, avec un precommit et prepush qui execute tout les tests
 
 Listes des point bonus si vous avez le projet sur github
