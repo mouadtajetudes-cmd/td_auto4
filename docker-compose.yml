@@ -7,3 +7,9 @@ services:
     volumes:
       - ./:/var/www/html
     command: php -S 0.0.0.0:80 -t public
+  
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8081:8080
