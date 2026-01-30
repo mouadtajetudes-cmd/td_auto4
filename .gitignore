@@ -10,13 +10,13 @@
 ###< symfony/framework-bundle ###
 
 ###> phpunit/phpunit ###
-/phpunit.xml
-.phpunit.result.cache
+#/phpunit.xml
+#.phpunit.result.cache
 ###< phpunit/phpunit ###
 
 ###> symfony/phpunit-bridge ###
-.phpunit.result.cache
-/phpunit.xml
+#.phpunit.result.cache
+#/phpunit.xml
 ###< symfony/phpunit-bridge ###
 
 ###> symfony/asset-mapper ###
@@ -25,10 +25,10 @@
 ###< symfony/asset-mapper ###
 
 ###> phpstan/phpstan ###
-phpstan.neon
+#phpstan.neon
 ###< phpstan/phpstan ###
 
 ###> squizlabs/php_codesniffer ###
-/.phpcs-cache
-/phpcs.xml
+#/.phpcs-cache
+#/phpcs.xml
 ###< squizlabs/php_codesniffer ###
