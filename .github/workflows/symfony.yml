@@ -47,6 +47,9 @@ jobs:
       - name: PHPStan
         run: vendor/bin/phpstan analyse -c phpstan.neon --no-progress
 
+      - name: PHP CBF
+        run: vendor/bin/phpcbf --standard=PSR12 src/
+
       # --------- PHPCS ----------
       - name: PHPCS
         run: vendor/bin/phpcs --standard=PSR12 src/
