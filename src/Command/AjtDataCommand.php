@@ -22,7 +22,9 @@ class AjtDataCommand extends Command
     public function __construct(
         private EntityManagerInterface $entityManager
     )
-    { parent::__construct(); }
+    {
+        parent::__construct();
+    }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
@@ -30,7 +32,7 @@ class AjtDataCommand extends Command
         $faker = FakerFactory::create();
 
         //bâtiments
-        for ( $i = 0 ; $i < 3 ; $i++ ) {
+        for ($i = 0 ; $i < 3 ; $i++ ) {
             $batiment = new Batiment();
             $batiment->setNom('Batiment ' . $faker->company());
             $this->entityManager->persist($batiment);
@@ -40,7 +42,7 @@ class AjtDataCommand extends Command
 
 
         //produits
-        for ( $i = 0 ; $i < 3 ; $i++ ) {
+        for ($i = 0 ; $i < 3 ; $i++ ) {
             $produit = new Produits();
             $produit->setLibelle($faker->word());
             $produit->setDescription($faker->sentence());
@@ -50,7 +52,7 @@ class AjtDataCommand extends Command
         $io->success('3 produits ajoutés');
 
         //utilisateurs
-        for ( $i = 0 ; $i < 3 ; $i++ ) {
+        for ($i = 0 ; $i < 3 ; $i++ ) {
             $user = new Utilisateurs();
             $user->setName($faker->name());
             $user->setEmail($faker->email());

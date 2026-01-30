@@ -13,7 +13,6 @@ final class HomePageController extends AbstractController
     public function index(BatimentRepository $batimentRepository): Response
     {
         $batiments = $batimentRepository->findAll();
-        
         return $this->render('home_page/index.html.twig', [
             'controller_name' => 'HomePageController',
             'batiments' => $batiments,
